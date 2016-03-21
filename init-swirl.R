@@ -1,0 +1,5 @@
+utils::install.packages("swirl", repos = "http://wush978.github.io/R")
+library(swirl)
+library(curl)
+try(uninstall_course("DataScienceAndR"), silent=TRUE)
+install_course_github("wush978", "DataScienceAndR", "course")
